@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <div class="info">
+        Username: {{name}}<br>
+        <!-- Stocks mein kitna paisa hai: {{stockmoney | usd}}<br> -->
+        Profit: {{profit | usd}}<br>
+    </div>
+{% endblock %}

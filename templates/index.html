@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table style="width: 100vw;">
+        <tbody>
+            {% if stocks is defined and stocks%}
+            <thead>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </thead>
+
+            {% for stock in stocks %}
+            <tr>
+                <td>{{ stock["symbol"] }}</td>
+                <td>{{ stock["name"] }}</td>
+                <td>{{ stock["shares"] }}</td>
+                <td>{{ stock["price"] | usd}}</td>
+                <td>{{ stock["total"] | usd}}</td>
+            </tr>
+            {% endfor %}
+            {% else %}
+            <div class="error">Your portfolio is empty</div>            
+            {% endif %}
+            <tr>
+                <td colspan="4" style="text-align: right;">Cash</td>
+                <td>{{ user_cash | usd }}</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: right;">TOTAL</td>
+                <td>{{ total_cash | usd }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

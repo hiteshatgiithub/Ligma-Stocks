@@ -1,0 +1,80 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+
+main{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.portfolio{
+    width : 100vw;
+    text-align: center;
+}
+
+td,th{
+    display: table-cell;
+    padding: 1rem 1rem 1rem 1rem;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+.form-group{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.nav-item{
+    transition-duration: 0.2s;
+}
+.nav-item:hover{
+    transition-duration: 0.2s;
+    transform: scale(1.02);
+}
+
+.dropdown{
+    background: transparent !important;
+}
+
+img{
+    margin-top: 12px;
+    object-fit: cover;
+
+}
+
+.info, .info2{
+    text-align: left;
+    font-size: 1.25rem;
+}

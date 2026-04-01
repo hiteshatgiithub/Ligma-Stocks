@@ -1,0 +1,22 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <table style="width:100vw;">
+        <thead>
+            <th>Stock Name</th>
+            <th>Symbol</th>
+            <th>Stock Price</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ symbol }}</td>
+                <td>{{ price | usd}}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
