@@ -5,19 +5,22 @@
 Make sure you have all the required libraries installed given in the requirements.txt file.
 
 Steps:
+
 1. Open the terminal and go to the directory containing the app.py file.
-2. For Windows (Anaconda terminal), run the following command: set API_KEY="apikey"
+2. For Windows (Anaconda terminal), run the following command: set API\_KEY="apikey"
 
-   For Linux, run: export API_KEY=apikey
+   For Linux, run: export API\_KEY=apikey
 
-   Where apikey = pk_4aba43ae608a423ea9cefaac7ab4279f
+   Where apikey = YOUR\_API\_KEY
 
    If this apikey does not work, go to https://iexcloud.io/console/tokens, create a new account and use a new api key generated there.
+
 3. Now run the command: flask run
 4. Open the localhost site generated in the terminal. The link might look something like this: http://127.0.0.1:5000
 
-And it's done! You can buy, sell and monitor your stocks with ease.
+   And it's done! You can buy, sell and monitor your stocks with ease.
 
-# Website URL : https://ligma-stocks.onrender.com/ 
+   # Website URL : https://ligma-stocks.onrender.com/
 
-# You'll need it whenever you push code changes to GitHub from your computer. When git asks for your password in the terminal, paste this token instead. :  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  
+   # You'll need it whenever you push code changes to GitHub from your computer. When git asks for your password in the terminal, paste this token instead. :  ghp\_rSetCwC3rrPMR30DKgSjgPaGNaikxQ329clk
+
