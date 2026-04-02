@@ -325,6 +325,12 @@ def changepassword():
 def aboutus():
     return render_template("about-us.html")
 
+@app.route("/admin/reset-cash")
+def reset_cash():
+    """Secret admin route to set all users cash to 12500 (₹10 lakh)"""
+    db.execute("UPDATE users SET cash = 12500")
+    return "Done! All users cash updated to ₹10,00,000"
+
 @app.route("/profile", methods=["GET"])
 @login_required
 def profile():

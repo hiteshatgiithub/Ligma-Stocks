@@ -17,3 +17,7 @@ Steps:
 4. Open the localhost site generated in the terminal. The link might look something like this: http://127.0.0.1:5000
 
 And it's done! You can buy, sell and monitor your stocks with ease.
+
+# Website URL : https://ligma-stocks.onrender.com/ 
+
+# You'll need it whenever you push code changes to GitHub from your computer. When git asks for your password in the terminal, paste this token instead. :  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  
