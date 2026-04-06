@@ -73,7 +73,7 @@ def index():
                 stock["price"] = quote["price"]
                 stock["total"] = stock["price"] * stock["shares"]
                 total_cash_stocks += stock["total"]
-                valid_stocks.append(stock)
+                valid_stocks.pop(stock)
 
             total_cash = total_cash_stocks + user_cash[0]["cash"]
             return render_template("index.html", stocks=valid_stocks, user_cash=user_cash[0]["cash"], total_cash=total_cash)
