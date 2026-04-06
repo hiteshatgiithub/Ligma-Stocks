@@ -117,7 +117,7 @@ def buy():
                 db.execute("INSERT INTO stocks (user_id, symbol, shares, price, date, operation) VALUES (?, ?, ?, ?, ?, ?)",
                            session["user_id"], symbol.upper(), shares, quote["price"], date, "Buy")
 
-                flash("Bought!")
+                flash(" Crazy Buying !")
                 return redirect("/")
 
     else:
